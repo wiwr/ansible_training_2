@@ -37,3 +37,23 @@
       dest: /home/test/.bashrc
       owner: test
       group: test
+
+  - name: add ansible user
+    user:
+      name: velociraptor
+      system: yes
+
+  - name: set up sudo for ansible user
+    copy:
+      src: files/sudoer_velociraptor
+      dest: /etc/sudoers.d/velociraptor
+      owner: root
+      group: root
+      mode: 0440
+
+  - name: add ansible_pull cron job
+    corn:
+      name: ansible auto-provision
+      user: velociraptor
+      minute: "*/10"
+        job ansible-pull -o -U https://github.com/wiwr/ansible_training_2.git
