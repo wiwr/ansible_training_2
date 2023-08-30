@@ -7,10 +7,10 @@
   - name: install packages 
     package:
       name: 
-        htop
-        tmux
-        vim-nox
-        gimp
+        - htop
+        - tmux
+        - vim-nox
+        - gimp
         
   - name: copy wallpaper file
     copy:
