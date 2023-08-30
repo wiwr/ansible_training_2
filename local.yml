@@ -56,4 +56,4 @@
       name: ansible auto-provision
       user: velociraptor
       minute: "*/10"
-        job ansible-pull -o -U https://github.com/wiwr/ansible_training_2.git
+      job: ansible-pull -o -U https://github.com/wiwr/ansible_training_2.git
