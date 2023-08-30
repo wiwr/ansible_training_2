@@ -52,7 +52,7 @@
       mode: 0440
 
   - name: add ansible_pull cron job
-    corn:
+    cron:
       name: ansible auto-provision
       user: velociraptor
       minute: "*/10"
