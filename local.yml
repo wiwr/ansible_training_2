@@ -14,8 +14,8 @@
         
   - name: copy wallpaper file
     copy:
-      src: files/wallpaper.png
-      dest: /usr/share/backgrounds/ansible-wallpaper.png
+      src: files/wallpaper.jpg
+      dest: /usr/share/backgrounds/ansible-wallpaper.jpg
       owner: root
       group: root
 
@@ -23,7 +23,7 @@
     become_user: test
     dconf:
       key: /org/mate/desktop/background/picture-filename
-      value: "'/usr/share/backgrounds/ansible-wallpaper.png'"
+      value: "'/usr/share/backgrounds/ansible-wallpaper.jpg'"
 
   - name: set wallpaper position
     become_user: test
