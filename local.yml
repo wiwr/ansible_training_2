@@ -34,6 +34,6 @@
   - name: copy .bashrc file
     copy:
       src: files/bashrc
-      dest: /home/jay/.bashrc
+      dest: /home/test/.bashrc
       owner: test
       group: test
