@@ -31,3 +31,9 @@
       key: /org/mate/desktop/background/picture-options
       value: "'zoom'"
 
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/jay/.bashrc
+      owner: test
+      group: test
