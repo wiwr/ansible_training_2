@@ -22,12 +22,12 @@
   - name: set wallpaper
     become_user: test
     dconf:
-      key: /org/mate/desktop/background/picture-filename"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+      key: /org/mate/desktop/background/picture-filename
+      value: "'/usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
     become_user: test
     dconf:
-      key: /org/mate/desktop/background/picture-options"
+      key: /org/mate/desktop/background/picture-options
       value: "'zoom'"
 
