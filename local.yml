@@ -22,7 +22,7 @@
   - name: set wallpaper
     become_user: test
     dconf:
-      key: /org/mate/desktop/background/picture-uri"
+      key: /org/mate/desktop/background/picture-filename"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
